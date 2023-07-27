@@ -1,0 +1,104 @@
+/* FOR LOGIN PAGE */
+#snackbar {
+    visibility: hidden;
+    color: red;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0.5em;
+    position: fixed;
+    z-index: 1;
+    bottom: 3rem;
+    font-size: 1em;
+    border: 1px solid red;
+  }
+
+  #snackbar.show {
+    visibility: visible;
+    -webkit-animation: comein 0.5s, goout 0.5s 2.5s;
+    animation: comein 0.5s, goout 0.5s 2.5s;
+  }
+
+/* FOR SUCCESSFULLY UPDATED OR ADDED */
+  #successful{
+    visibility: hidden;
+    background-color: #25db9e;
+    border-radius: 5px;
+    padding: 0.5em;
+    position: fixed;
+    z-index: 1;
+    top: 3rem;
+    font-size: 1em;
+    right: 3rem;
+  }
+  #successful.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+
+  /* FOR SUCCESSFULLY DELETED */
+
+  #delete{
+    visibility: hidden;
+    color: white;
+    background-color: rgb(220, 71, 71);
+    border-radius: 5px;
+    padding: 0.5em;
+    position: fixed;
+    z-index: 1;
+    top: 3rem;
+    font-size: 1em;
+    right: 3rem;
+  }
+  #delete.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+
+  
+  @-webkit-keyframes fadein {
+    from {top: 0; opacity: 0;} 
+    to {top: 3rem; opacity: 1;}
+  }
+  @keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 3rem; opacity: 1;}
+  }
+  @-webkit-keyframes fadeout {
+    from {top: 3rem; opacity: 1;} 
+    to {top: 0; opacity: 0;}
+  }
+  @keyframes fadeout {
+    from {top: 3rem; opacity: 1;}
+    to {top: 0; opacity: 0;}
+  }
+
+  /* for login */
+
+  @-webkit-keyframes comein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 3rem; opacity: 1;}
+  }
+  @keyframes comein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 3rem; opacity: 1;}
+  }
+  @-webkit-keyframes goout {
+    from {bottom: 3rem; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+  }
+  @keyframes goout {
+    from {bottom: 3rem; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+
+  @media screen and (max-width: 786px) {
+    .whyusimg{
+      height: 30vh;
+    } 
+    .whyuscol{
+      margin: 0 2em;
+    }
+  }
+
